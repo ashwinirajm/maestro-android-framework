@@ -1,0 +1,33 @@
+appId: "{{config.app.appId}}"
+---
+- ifVisible: "swagger-labs-header"
+  then:
+    - log: "User already logged in"
+  else:
+    - runFlow: login.yaml
+
+- tapOn: "Sauce Labs Backpack"
+
+- getText:
+    locator: "{{product_details.backpack.description}}"
+    saveAs: "description"
+- getText:
+    locator: "{{product_details.backpack.price}}"
+    saveAs: "price"
+
+- log: "Product Description: {{description}}"
+- log: "Product price: {{price}}"
+
+- tapOn: "BACK TO PRODUCTS"
+
+- tapOn:
+    text: "ADD TO CART"
+    index: 0
+
+#go to cart locator
+- tapOn:
+    point: "94%,7%"
+
+- tapOn: "CHECKOUT"
+
+- assertVisible: "CHECKOUT: INFORMATION"

@@ -1,0 +1,13 @@
+appId: com.swaglabsmobileapp
+---
+- launchApp
+
+- assertVisible: "Username"
+
+- tapOn: "Username"
+- inputText: "{{login_credentials.standard_user.username}}"
+
+- tapOn: "Password"
+- inputText: "{{login_credentials.standard_user.password}}"
+
+- tapOn: "test-LOGIN"

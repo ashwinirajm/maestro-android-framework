@@ -1,0 +1,13 @@
+appId: com.swaglabsmobileapp
+---
+- ifVisible: "swagger-labs-header"
+  then:
+    - log: "User already logged in"
+  else:
+    - runFlow: login.yaml
+
+# go to menu/settings
+- tapOn:
+      point: "7%,8%"
+
+- tapOn: "LOGOUT"

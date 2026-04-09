@@ -1,0 +1,11 @@
+defaultDevice: Pixel_6
+
+Pixel_6:
+  apiLevel: 33
+  resolution: "1080x2400"
+  orientation: portrait
+
+Pixel_9:
+  apiLevel: 34
+  resolution: "1440x3120"
+  orientation: portrait

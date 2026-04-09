@@ -1,0 +1,7 @@
+backpack:
+  description: "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection."
+  price: "$29.99"
+
+bike_light:
+  description: "A red light with bright beam to make your bike visible."
+  price: "$9.99"

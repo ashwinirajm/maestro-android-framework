@@ -1,0 +1,12 @@
+appId: "{{config.app.appId}}"
+device: "{{config.devices.Pixel_9}}"
+---
+- runFlow: login.yaml
+
+- runFlow: add_to_cart.yaml
+
+- runFlow: cart_verification.yaml
+
+- runFlow: checkout.yaml
+
+- runFlow: logout.yaml

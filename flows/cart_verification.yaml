@@ -1,0 +1,17 @@
+appId: "{{config.app.appId}}"
+---
+- ifVisible: "swagger-labs-header"
+  then:
+    - log: "User already logged in"
+  else:
+    - runFlow: login.yaml
+
+#go to cart locator
+- tapOn:
+    point: "94%,7%"
+
+- assertVisible: "{{description}}"
+
+- assertVisible: "{{price}}"
+
+- log: "Cart Verified for product: {{description}} at price {{price}}"
