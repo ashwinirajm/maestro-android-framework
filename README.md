@@ -1,4 +1,5 @@
 # maestro-android-framework
+
 This repository contains an Android test automation framework built with Maestro for testing the Swag Labs Mobile App. The framework uses flows, config, and test data to maintain reusable, scalable, and readable test automation.
 
 ## SetUp
@@ -21,25 +22,21 @@ maestro test flows/e2e_flow.yaml
 
 ```
 maestro-android-framework/
-├── flows/                     # All your test flows
+├── flows/                     
 │   ├── login.yaml
 │   ├── logout.yaml
 │   ├── add_to_cart.yaml
 │   ├── cart_verification.yaml
 │   ├── checkout.yaml
-│   └── e2e_flow.yaml          # Or launch_app.yaml / full E2E flow
+│   └── e2e_flow.yaml          
 │
-├── config/                    # Configuration for app and devices
-│   ├── app.yaml               # Example: appId, app path, etc.
-│   └── devices.yaml           # Device details, Pixel_9, Pixel_6, etc.
+├── config/                    
+│   ├── app.yaml               
+│   └── devices.yaml           
 │
-├── testdata/                  # Test data for credentials, products, etc.
-│   ├── login_credentials.yaml
-│   └── products.yaml
-│
-├── README.md                  # Instructions to run tests, setup, etc.
-├── .gitignore                 # Ignore Maestro logs, builds, temp files
-└── scripts/                   # Optional: helper scripts, CI triggers, etc.
+├── test-data/                  
+    ├── login_credentials.yaml
+    └── products.yaml             
 ```
 
 
